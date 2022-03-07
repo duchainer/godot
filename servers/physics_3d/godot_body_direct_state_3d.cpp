@@ -192,6 +192,11 @@ real_t GodotPhysicsDirectBodyState3D::get_contact_impulse(int p_contact_idx) con
 	return 0.0f; // Only implemented for bullet
 }
 
+Vector3 GodotPhysicsDirectBodyState3D::get_contact_velocity_at_position(int p_contact_idx) const {
+	ERR_FAIL_INDEX_V(p_contact_idx, body->contact_count, Vector3());
+	return body->contacts[p_contact_idx].velocity_at_pos;
+}
+
 int GodotPhysicsDirectBodyState3D::get_contact_local_shape(int p_contact_idx) const {
 	ERR_FAIL_INDEX_V(p_contact_idx, body->contact_count, -1);
 	return body->contacts[p_contact_idx].local_shape;
