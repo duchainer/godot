@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="CSGSphereShape3D" inherits="CSGPrimitiveShape3D" version="4.0">
+	<brief_description>
+		A CSG Sphere shape.
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+	</methods>
+	<members>
+		<member name="radial_segments" type="int" setter="set_radial_segments" getter="get_radial_segments" default="12">
+			Number of vertical slices for the sphere.
+		</member>
+		<member name="radius" type="float" setter="set_radius" getter="get_radius" default="1.0">
+			Radius of the sphere.
+		</member>
+		<member name="rings" type="int" setter="set_rings" getter="get_rings" default="6">
+			Number of horizontal slices for the sphere.
+		</member>
+	</members>
+	<constants>
+	</constants>
+</class>

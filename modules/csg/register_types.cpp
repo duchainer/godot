@@ -34,6 +34,15 @@
 
 #include "csg_shape.h"
 
+	GDREGISTER_VIRTUAL_CLASS(CSGPrimitiveShape3D);
+	GDREGISTER_CLASS(CSGMeshShape3D);
+	GDREGISTER_CLASS(CSGBoxShape3D);
+	GDREGISTER_CLASS(CSGCylinderShape3D);
+	GDREGISTER_CLASS(CSGSphereShape3D);
+	GDREGISTER_CLASS(CSGTorusShape3D);
+	GDREGISTER_CLASS(CSGPolygonShape3D);
+	GDREGISTER_CLASS(CSGTool);
+
 #ifdef TOOLS_ENABLED
 #include "editor/csg_gizmos.h"
 #endif

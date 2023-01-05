@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="CSGPrimitiveShape3D" inherits="Resource" version="4.0">
+	<brief_description>
+		Base class for CSG primitives.
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+	</methods>
+	<members>
+		<member name="invert_faces" type="bool" setter="set_invert_faces" getter="is_inverting_faces" default="false">
+			Invert the faces of the mesh.
+		</member>
+		<member name="material" type="Material" setter="set_material" getter="get_material">
+		</member>
+		<member name="smooth_faces" type="bool" setter="set_smooth_faces" getter="get_smooth_faces" default="true">
+		</member>
+	</members>
+	<constants>
+	</constants>
+</class>
